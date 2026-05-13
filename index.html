@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BUD MAR</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="icon" type="image/png" href="oknograf.png">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="header">
+<div class="container nav">
+
+  <div class="logo">
+    <span>BUD</span>
+    <img src="oknograf.png" alt="">
+    <span>MAR</span>
+  </div>
+
+  <nav class="menu" id="menu">
+    <a href="#home">Start</a>
+    <a href="#uslugi">Usługi</a>
+    <a href="#jak-dzialamy">Jak działamy</a>
+    <a href="#faq">FAQ</a>
+    <a href="#kontakt">Kontakt</a>
+  </nav>
+
+  <a href="tel:+48501357668" class="cta">📞 Zadzwoń</a>
+  <span class="top-note">📍 Szybki dojazd</span>
+
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+</div>
+</header>
+
+<!-- MOBILE MENU OVERLAY -->
+<div class="mobile-overlay" id="mobileOverlay"></div>
+
+<!-- MOBILE MENU DRAWER -->
+<nav class="mobile-drawer" id="mobileDrawer">
+  <div class="mobile-drawer-header">
+    <div class="logo" style="color:#38bdf8;">
+      <span>BUD</span>
+      <span>MAR</span>
+    </div>
+    <button class="drawer-close" id="drawerClose">&#10005;</button>
+  </div>
+  <a href="#home" class="drawer-link">🏠 Start</a>
+  <a href="#uslugi" class="drawer-link">🔧 Usługi</a>
+  <a href="#jak-dzialamy" class="drawer-link">🔄 Jak działamy</a>
+  <a href="#faq" class="drawer-link">❓ FAQ</a>
+  <a href="#kontakt" class="drawer-link">📞 Kontakt</a>
+  <a href="tel:+48501357668" class="drawer-cta">📞 Zadzwoń teraz</a>
+  <a href="https://wa.me/48501357668?text=Dzień dobry, potrzebuję wyceny." target="_blank" class="drawer-cta whatsapp-cta">💬 WhatsApp</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+<div class="hero-bg"></div>
+<div class="overlay"></div>
+<div class="container hero-content">
+  <h1>Profesjonalny Serwis Okien Produkcja Oraz Montaż Moskitier</h1>
+  <p>Szybka naprawa, precyzyjna regulacja i montaż na wymiar. Działamy solidnie, czysto i bez zbędnych opóźnień.</p>
+  <div class="hero-buttons">
+    <a href="tel:+48501357668" class="btn primary">📞 Zadzwoń teraz!</a>
+    <a href="https://wa.me/48501357668?text=Dzień dobry,%20potrzebuję%20wyceny." target="_blank" class="btn whatsapp">💬 WhatsApp</a>
+  </div>
+</div>
+</section>
+
+<!-- STATYSTYKI -->
+<section class="stats-section">
+<div class="container">
+  <div class="stats-grid">
+    <div class="stat-item">
+      <span class="stat-number" data-target="500">0</span><span class="stat-plus">+</span>
+      <p>Zrealizowanych zleceń</p>
+    </div>
+    <div class="stat-item">
+      <span class="stat-number" data-target="10">0</span><span class="stat-plus">+</span>
+      <p>Lat doświadczenia</p>
+    </div>
+    <div class="stat-item">
+      <span class="stat-number" data-target="100">0</span><span class="stat-plus">%</span>
+      <p>Zadowolonych klientów</p>
+    </div>
+    <div class="stat-item">
+      <span class="stat-number" data-target="24">0</span><span class="stat-plus">h</span>
+      <p>Czas reakcji</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- MEDIA SECTION -->
+<section class="media-section">
+<div class="media-frame">
+  <div class="media-slider">
+
+    <div class="media-item active">
+      <img src="img1.png" alt="">
+    </div>
+    <div class="media-item">
+      <img src="img2.png" alt="">
+    </div>
+    <div class="media-item">
+      <img src="img3.jpeg" alt="">
+    </div>
+    <div class="media-item">
+      <img src="img4.jpeg" alt="">
+    </div>
+    <div class="media-item">
+      <img src="img5.jpeg" alt="">
+    </div>
+    <div class="media-item">
+      <img src="img6.jpeg" alt="">
+    </div>
+    <div class="media-item">
+      <video muted loop controls playsinline>
+        <source src="mov.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="media-item">
+      <video muted loop controls playsinline>
+        <source src="mov2.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="media-item">
+      <video muted loop controls playsinline>
+        <source src="mov3.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <!-- DOTS -->
+    <div class="media-dots" id="mediaDots"></div>
+
+    <button class="media-btn prev" id="prevMedia">&#10094;</button>
+    <button class="media-btn next" id="nextMedia">&#10095;</button>
+
+  </div>
+</div>
+</section>
+
+<!-- USŁUGI -->
+<section class="section" id="uslugi">
+<div class="container">
+  <h2 class="section-title">Nasze Usługi</h2>
+  <div class="services-grid">
+    <div class="card">
+      <i class="fa-solid fa-screwdriver-wrench"></i>
+      <h3>Naprawa Okien</h3>
+      <p>Regulacja, uszczelnianie oraz naprawa okuć i klamek. Przywracamy pełną sprawność okien, eliminując przeciągi i problemy z zamykaniem.</p>
+    </div>
+    <div class="card">
+      <i class="fa-solid fa-window-maximize"></i>
+      <h3>Rolety Dzień/Noc </h3>
+      <p>Serwis i naprawa rolet, prowadnic oraz mechanizmów. Zapewniamy płynne działanie i estetyczny wygląd każdego systemu.</p>
+    </div>
+    <div class="card">
+      <i class="fa-solid fa-shield"></i>
+      <h3>Moskitiery</h3>
+      <p>Produkcja i montaż moskitier na wymiar. Skuteczna ochrona przed owadami przy zachowaniu pełnej wentylacji i widoczności.</p>
+    </div>
+  </div>
+  <div class="services-grid" style="margin-top:25px;">
+    <div class="card">
+      <i class="fa-solid fa-door-open"></i>
+      <h3>Montaż oraz regulacja drzwi</h3>
+      <p>Regulacja, uszczelnianie oraz naprawa okuć i klamek. Przywracamy pełną sprawność drzwi, eliminując przeciągi i problemy z zamykaniem.</p>
+    </div>
+    <div class="card">
+      <i class="fa-solid fa-tools"></i>
+      <h3>Pogwarancyjny serwis</h3>
+      <p>Kompleksowy serwis okien i drzwi po upływie gwarancji. Szybka diagnostyka i naprawa bez konieczności wymiany całego okna.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- CO GWARANTUJEMY -->
+<section class="section" id="produkty">
+<div class="container">
+  <h2 class="section-title">Co gwarantujemy?</h2>
+  <div class="guarantee-grid">
+    <div class="guarantee-item">
+      <span class="guarantee-icon">🎖️</span>
+      <h4>Doświadczenie i fachowość</h4>
+      <p>Setki napraw za nami – znamy każdy typ okna i problem.</p>
+    </div>
+    <div class="guarantee-item">
+      <span class="guarantee-icon">🕖</span>
+      <h4>Rzetelność i terminowość</h4>
+      <p>Przyjeżdżamy na czas i kończymy pracę tego samego dnia.</p>
+    </div>
+    <div class="guarantee-item">
+      <span class="guarantee-icon">〰️</span>
+      <h4>Podejście indywidualne</h4>
+      <p>Każde zlecenie traktujemy osobno – bez szablonowych rozwiązań.</p>
+    </div>
+    <div class="guarantee-item">
+      <span class="guarantee-icon">✔️</span>
+      <h4>Profesjonalne wykonanie</h4>
+      <p>Pracujemy schludnie, dokładnie i z poszanowaniem Twojego domu.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- DLACZEGO MY -->
+<section class="section dark">
+<div class="container">
+  <h2 class="section-title">Dlaczego klienci wybierają nas</h2>
+  <div class="services-grid">
+    <div class="card">
+      <h3>⚡ Szybka reakcja</h3>
+      <p>Przyjeżdżamy często tego samego dnia. Bez długiego czekania.</p>
+    </div>
+    <div class="card">
+      <h3>💰 Uczciwa wycena</h3>
+      <p>Zero ukrytych kosztów. Wiesz ile zapłacisz przed rozpoczęciem pracy.</p>
+    </div>
+    <div class="card">
+      <h3>🏆 Doświadczenie</h3>
+      <p>Setki naprawionych okien i rolet – wiemy co robimy.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- JAK DZIAŁAMY -->
+<section class="section" id="jak-dzialamy">
+<div class="container">
+  <h2 class="section-title">Jak działamy?</h2>
+  <p class="section-sub">Od kontaktu do gotowej naprawy – prosto i bez komplikacji</p>
+  <div class="steps-wrapper">
+
+    <div class="step">
+      <div class="step-number">1</div>
+      <div class="step-connector"></div>
+      <div class="step-content">
+        <span class="step-icon">📱</span>
+        <h3>Kontakt</h3>
+        <p>Zadzwoń lub wyślij zdjęcie na WhatsApp. W kilka minut otrzymasz wstępną wycenę bez wychodzenia z domu.</p>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-number">2</div>
+      <div class="step-connector"></div>
+      <div class="step-content">
+        <span class="step-icon">📅</span>
+        <h3>Termin</h3>
+        <p>Ustalamy dogodny termin – często tego samego dnia. Przyjeżdżamy punktualnie i informujemy o przyjeździe.</p>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-number">3</div>
+      <div class="step-connector"></div>
+      <div class="step-content">
+        <span class="step-icon">🔧</span>
+        <h3>Naprawa</h3>
+        <p>Diagnozujemy problem i wykonujemy naprawę. Pracujemy schludnie – sprzątamy po sobie i nie zostawiamy bałaganu.</p>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-number">4</div>
+      <div class="step-connector last"></div>
+      <div class="step-content">
+        <span class="step-icon">✅</span>
+        <h3>Gotowe!</h3>
+        <p>Sprawdzamy efekt razem z Tobą. Okno działa jak nowe. Płacisz tylko za to, co zostało uzgodnione.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+</section>
+
+<!-- FAQ -->
+<section class="section dark" id="faq">
+<div class="container">
+  <h2 class="section-title">Najczęstsze pytania</h2>
+  <div class="faq-list">
+
+    <div class="faq-item">
+      <button class="faq-question">Jak szybko możecie przyjechać? <span class="faq-icon">+</span></button>
+      <div class="faq-answer">
+        <p>W większości przypadków przyjeżdżamy tego samego dnia lub następnego. Skontaktuj się z nami i ustalamy termin od razu.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Czy wycena jest bezpłatna? <span class="faq-icon">+</span></button>
+      <div class="faq-answer">
+        <p>Tak, wycena jest bezpłatna. Wystarczy wysłać zdjęcie problemu na WhatsApp i w kilka minut otrzymasz orientacyjną cenę.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Jakie okna naprawiacie? <span class="faq-icon">+</span></button>
+      <div class="faq-answer">
+        <p>Naprawiamy okna PVC, aluminiowe i drewniane wszystkich popularnych producentów. Regulacja, uszczelnienie, wymiana okuć i klamek.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Czy moskitiery robicie na wymiar? <span class="faq-icon">+</span></button>
+      <div class="faq-answer">
+        <p>Tak, każda moskitiera jest wykonana na wymiar konkretnego okna lub drzwi. Dlatego pasuje idealnie i działa bez problemów.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">Na jakim terenie działacie? <span class="faq-icon">+</span></button>
+      <div class="faq-answer">
+        <p>Działamy na terenie Twardogóry, Oleśnicy, Ostrowa Wielkopolskiego, Wrocław i inne miejscowości w promieniu ok. 50 km.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+</section>
+
+<!-- KONTAKT -->
+<section class="section" id="kontakt">
+<div class="container">
+  <div class="contact-box">
+    <h2>Kontakt</h2>
+    <p class="contact-text">Skontaktuj się z nami — szybko wycenimy Twoje zlecenie i ustalimy dogodny termin realizacji. Nie czekaj, aż problem się pogłębi.</p>
+    <div class="contact-buttons">
+      <a href="tel:+48501357668" class="contact-btn phone">📞 Zadzwoń</a>
+      <a href="https://www.facebook.com/share/18ZHbojiqK/" target="_blank" class="social-btn"><i class="fab fa-facebook-f"></i> Facebook</a>
+      <a href="https://www.tiktok.com/@budmar.twardogora1?is_from_webapp=1&sender_device=pc" target="_blank" class="social-btn"><i class="fab fa-tiktok"></i> TikTok</a>
+    </div>
+  </div>
+</div>
+</section>
+
+
+<!-- FOOTER -->
+<footer class="footer">
+<p>© 2026 BUD MAR – Serwis Okien i Moskitier</p>
+<p style="margin-top:8px; font-size:13px;">📞 <a href="tel:+48501357668" style="color:#38bdf8; text-decoration:none;">+48 501 357 668</a></p>
+</footer>
+
+<!-- FLOAT BADGE -->
+<div class="floating-badge">
+  <img src="gwarancja.png" alt="Szybko Solidnie z Gwarancją">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
